@@ -12,7 +12,5 @@ class Repository(private val db: PessoaDataBase) {
         db.pessoaDao().upsertPessoa(pessoa)
     }
 
-    fun getAllPessoa(): List<Pessoa> {
-        return db.pessoaDao().getAllPessoa()
-    }
+    fun getAllPessoa() =  db.pessoaDao().getAllPessoa()
 }
